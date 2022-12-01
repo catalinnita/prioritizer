@@ -23,4 +23,35 @@ a {
     color: white;
     background: black;
   }
+  :root {
+    --spacing-XXS: 2px;
+    --spacing-XS: 5px;
+    --spacing-S: 10px;
+    --spacing-M: 15px;
+    --spacing-L: 20px;
+    --spacing-XL: 25px;
+    --spacing-XXL: 40px;
+
+    --spacing-sidebar: 450px;
+
+    --typography-size-XS: 10px;
+    --typography-size-S: 12px;
+    --typography-size-M: 14px;
+    --typography-size-L: 16px;
+    --typography-size-XL: 20px;
+
+    --typography-color-primary: #FFFFFF;
+    --typography-color-secondary: #CCCCCC;
+    --typography-color-tertiary: #888888;
+
+    --color-lines: #FFFFFF22;
+
+    --color-background-lighter: #222222;
+    --color-background: #070707;
+    --color-background-darker: #000000;
+
+    --color-highlight: #663399;
+
+    --border-radius: 15px;
+  }
 }
