@@ -20,8 +20,8 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #e0e0e0;
+    background: #1c1c1c;
   }
   :root {
     --spacing-XXS: 2px;
@@ -44,11 +44,11 @@ a {
     --typography-color-secondary: #CCCCCC;
     --typography-color-tertiary: #888888;
 
-    --color-lines: #FFFFFF22;
+    --color-lines: #3a3a3a;
 
-    --color-background-lighter: #222222;
-    --color-background: #070707;
-    --color-background-darker: #000000;
+    --color-background-lighter: #232323;
+    --color-background: #1c1c1c;
+    --color-background-darker: #1c1c1c;
 
     --color-highlight: #663399;
 
