@@ -14,7 +14,7 @@ Use multiple parameters to plot tasks in pritoritization matrix
 
 - https://prioritizer-micro-saas.vercel.app/login
 
-![Screenshot of demo]()
+![Screenshot of demo]
 
 ## Architecture
 
