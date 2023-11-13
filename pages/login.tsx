@@ -3,8 +3,9 @@ import { createServerSupabaseClient } from '@supabase/auth-helpers-nextjs'
 import { Auth, ThemeSupa } from '@supabase/auth-ui-react'
 import styles from '../styles/base.module.css'
 import { useSupabaseClient } from '@supabase/auth-helpers-react'
+import { GetServerSidePropsContext } from 'next'
 
-function Home({ supabase }) {
+function Home() {
     const supabaseClient = useSupabaseClient()
     return (
     <div className={styles.loginWrapper}>
@@ -29,7 +30,7 @@ function Home({ supabase }) {
     )
 }
 
-export const getServerSideProps = async (ctx) => {
+export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
 
     // Create authenticated Supabase Client
     const supabase = createServerSupabaseClient(ctx)

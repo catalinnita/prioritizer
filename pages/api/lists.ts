@@ -10,7 +10,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-    const supabase = createServerSupabaseClient(ctx)
+    const supabase = createServerSupabaseClient({req, res})
 
   res.status(200).json({ name: 'John Doe' })
 }

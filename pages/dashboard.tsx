@@ -5,6 +5,7 @@ import { SingOutButton } from '../components/signoutButton/signoutButton'
 import React, { useEffect, useState } from 'react'
 import { useSupabaseClient, useUser } from '@supabase/auth-helpers-react'
 import { useRouter } from 'next/router'
+import { GetServerSidePropsContext } from 'next'
 
 function useHash(): string {
   const [currentHash, setCurrentHash] = useState('');
@@ -34,7 +35,7 @@ function useHash(): string {
 
 }
 
-function Home(props) {
+function Home() {
   const Router = useRouter()
   const supabase = useSupabaseClient()
   const user = useUser()
@@ -507,7 +508,7 @@ function Home(props) {
   )
 }
 
-export const getServerSideProps = async (ctx) => {
+export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   // Create authenticated Supabase Client
   const supabase = createServerSupabaseClient(ctx)
   // Check if we have a session

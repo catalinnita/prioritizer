@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/base.module.css'
 
-export default function Home(props) {
-  console.log({props})
+export default function Home() {
   return (
     <div className={styles.wrapper}>
       <Head>
